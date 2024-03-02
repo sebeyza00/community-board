@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +65,49 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+
+.restaurantImage {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+
+.button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  /* Primary color */
+  color: white;
+  /* Text color */
+  border: none;
+  /* Remove default border */
+  border-radius: 5px;
+  /* Rounded corners */
+  cursor: pointer;
+  /* Cursor changes to a hand icon */
+  font-size: 12px;
+  /* Text size */
+  /* Text weight */
+  letter-spacing: 1px;
+  /* Spacing between letters */
+  transition: background-color 0.3s, transform 0.3s;
+  /* Smooth background color and transform transition */
+}
+
+.button:hover,
+.button:focus {
+  background-color: #3498db;
+  /* Darker shade on hover/focus */
+  outline: none;
+  /* Remove outline on focus */
+  transform: scale(1.05);
+  /* Slightly increase size */
+}
+
+.button:active {
+  background-color: #3498db;
+  /* Even darker shade when active/clicked */
+  transform: scale(0.95);
+  /* Slightly decrease size */
 }

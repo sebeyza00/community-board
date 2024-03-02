@@ -1,35 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
+import RestaurantCard from './components/RestaurantCard';
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="App">
+      <h1>Best Peruvian Food Restaurants in South Florida 🇵🇪</h1>
+      <table className="Gallery">
+        <tbody>
+          <tr>
+            <td>
+              <img src='src/images/cviche105.jpeg' className="restaurantImage" />
+              <RestaurantCard restaurantName="CVICHE 105" rating="4.8/5" website="https://www.google.com/search?q=cviche+105&source=lmns&bih=940&biw=1458&hl=en&sa=X&ved=2ahUKEwjbvuP3l9aEAxXmkLAFHTtPA2MQ0pQJKAB6BAgBEAI&lqi=CgtjdmkgY2hlIDEwNSIDiAEBSMTSnNjlgICACFojEAAQARACGAAYARgCIgtjdmkgY2hlIDEwNSoICAIQABABEAKSARNwZXJ1dmlhbl9yZXN0YXVyYW50qgFEEAEqDyILY3ZpIGNoZSAxMDUoADIeEAEiGtdcDve_J7vqke7bjmR6ybfhpXTAM49PB3G5Mg8QAiILY3ZpIGNoZSAxMDXgAQA#rlimm=17524356283736683821" />
+            </td>
+            <td>
+              <img src='src/images/embarcadero41.png' className="restaurantImage" />
+              <RestaurantCard restaurantName="Embarcadero 41" rating="4.7/5" website="https://www.yelp.com/biz/embarcadero-41-pembroke-pines" />
+            </td>
+            <td><RestaurantCard /></td>
+            <td><RestaurantCard /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
   )
 }
-
 export default App
+
